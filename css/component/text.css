@@ -1,0 +1,12 @@
+.text-white {
+  color: #fff;
+}
+
+.text-title {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.text-description {
+  font-size: 18px;
+}

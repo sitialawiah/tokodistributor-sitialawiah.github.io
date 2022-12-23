@@ -1,0 +1,100 @@
+@import url('./colors.css');
+@import url('./component/index.css');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+p {
+  font-family: 'Inter', sans-serif;
+}
+
+.nav {
+  width: 100%;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  padding: 10px 0;
+
+  z-index: 100;
+
+  transition: 0.2s all;
+}
+
+.container {
+  width: 100%;
+  max-width: 1020px;
+
+  margin: 0 auto;
+  padding: 0 20px;
+
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.content {
+  width: 100%;
+  max-width: 400px;
+
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+
+.section {
+  width: 100%;
+  padding: 40px 0;
+
+  overflow: hidden;
+}
+
+.container-first {
+  position: relative;
+
+  padding-top: 50px;
+}
+
+.container-first::after {
+  content: url('../assets/illustration1.svg');
+
+  position: absolute;
+  left: -20px;
+  bottom: -60px;
+}
+
+.container-first::before {
+  content: url('../assets/illustration2.svg');
+
+  position: absolute;
+  right: -100px;
+  top: -60px;
+}
+
+.container-first::after {
+  content: url('../assets/heroBackground.png');
+
+  position: absolute;
+  top: 115px;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .navigation-signup {
+    display: none;
+  }
+}

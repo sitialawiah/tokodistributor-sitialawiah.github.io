@@ -1,0 +1,38 @@
+.footer {
+  width: 100%;
+
+  display: flex;
+  gap: 40px;
+  justify-content: space-between;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url('../../assets/footerBackground.svg');
+}
+
+.footer-content {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+
+.footer-social {
+  display: flex;
+  gap: 12px;
+}
+
+.footer-contactus {
+  display: flex;
+  align-items: flex-end;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .footer-content {
+    align-items: center;
+  }
+}

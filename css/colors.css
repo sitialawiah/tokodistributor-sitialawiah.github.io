@@ -1,0 +1,11 @@
+.white {
+  color: white;
+}
+
+.white-background {
+  background: white;
+}
+
+.red-background {
+  background: linear-gradient(72.22deg, #eb2a2e 0%, #cf1863 100%);
+}
